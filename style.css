@@ -1,0 +1,387 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Kiwi Maru', serif;
+  width: 100%;
+}
+
+
+
+/*　上部ロゴ　*/
+.TopLogo {
+  text-align: center;
+  animation-name: tpdwn;
+  animation-duration: 2s;
+}
+
+@keyframes tpdwn {
+  from {
+    transform: translateY(-200px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.TopLogo img {
+  width: 22rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/*　上部動画　*/
+.TopMovie {
+  text-align: center;
+}
+
+.TopMovie iframe {
+  border-radius: 2.5rem;
+  width: 80rem;
+  height: 44rem;
+  max-width: 100%;
+}
+
+/*　メニュー　*/
+.TopMenu {
+  max-width: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0),white);
+  opacity: 0.97;
+  position: fixed;
+  bottom: 0;
+}
+
+.TopMenu ul {
+text-align: center;
+
+}
+
+.TopMenu li {
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.TopMenu a {
+  color: black;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.TopMenu a:hover {
+  opacity: 0.5;
+}
+
+/*　上部へ戻るアニメーション　
+.move-top{
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 35px;
+  right: 60px;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border-radius: 1rem;
+}
+.move-top:before{
+  content: "";
+  position: absolute;
+  left: 4px;
+  border-top: 7px solid transparent;
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
+}
+.move-top:after{
+  content: "";
+  position: absolute;
+  left: 6px;
+  border-top: 20px solid transparent;
+  border-right: 22px solid transparent;
+  border-bottom: 20px solid white;
+  border-left: 20px solid transparent;
+  z-index: 1;
+}
+*/
+
+/*　本文　*/
+main {
+  width: 70%;
+  margin: auto;
+}
+
+/*　h1（タイトル）設定　*/
+main h1 {
+  margin-bottom: 4rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  text-align: right;
+}
+
+/*　最新情報設定　*/
+.news {
+  text-align: center;
+}
+
+.BigBox {
+  margin-top: 10rem;
+  margin-bottom: 20rem;
+}
+
+.BigBox ul {
+  margin-right: -10px;
+}
+
+.BigBox li {
+  display: inline-block;
+}
+
+.box {
+  width: 25rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.box img {
+  width: 25rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.box p {
+  text-align: right;
+  font-size: 1rem;
+}
+
+.box a {
+  color: black;
+}
+
+.SubText {
+margin-top: 5rem;
+}
+
+.SubText a {
+  color: black;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+
+}
+
+.SubText a:hover {
+  opacity: 0.5;
+}
+
+/*　モーダルウィンドウ設定　*/
+.modal{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+display: none;
+}
+
+.modal_bg{
+  height: 100%;
+  background-color: black;
+  opacity:0.8;
+}
+
+.modal_window{
+  width: 50%;
+  height: 80vh;
+  border-radius: 2.5rem;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  overflow: scroll;
+}
+
+.modal_window h3{
+  margin-top: 2rem;
+  margin-bottom: 1000px;
+}
+
+.butoon_close{
+
+}
+
+
+
+/*　monokara.とは?設定　*/
+.about {
+  text-align: center;
+}
+
+.box1 img {
+  max-width: 100%;
+  width: 50rem;
+  border-radius: 2.5rem;
+}
+
+.box1 p {
+  text-align: left;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+  padding-top: 3rem;
+}
+
+/*　修復と着彩設定　*/
+.process {
+  text-align: center;
+}
+
+.BigBox1 {
+  margin-top: 10rem;
+  margin-bottom: 20rem;
+}
+
+.BigBox1 li {
+  display: inline-block;
+}
+
+.box2 {
+  width: 25rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.box2 img {
+  width: 25rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.box2 p {
+  text-align: right;
+  font-size: 1.4rem;
+}
+
+
+/*　作品設定　*/
+.opus {
+  text-align: center;
+}
+
+.opus p {
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  margin-top: 5rem;
+}
+
+.opus a {
+  color: black;
+}
+
+.opus a:hover {
+  opacity: 0.5;
+}
+
+
+/*　取り組み設定　*/
+.ArticleBox{
+  max-width: 100%;
+  margin-bottom: 5rem;
+}
+
+.ArticleBox img{
+  width: 25rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.ArticleBox-right{
+  max-height: 15rem;
+  max-width: 50rem;
+  padding-left: 5rem;
+  text-align: left;
+}
+
+.ArticleBox-right h2{
+  letter-spacing: 0.5rem;
+  padding-bottom: 0.3rem;
+}
+
+.ArticleBox-right p{
+  letter-spacing: 0.1rem;
+
+}
+
+
+
+
+/*　質問　*/
+.box3 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.box3 p {
+  text-align: left;
+  letter-spacing: 0.2rem;
+  font-size: 1.7rem;
+}
+
+/*　フッター　*/
+footer {
+  background-color: dimgray;
+  padding: 5rem;
+  max-width: 100%;
+}
+
+.FooterBox{
+  text-align: center;
+}
+
+.UnderLogo{
+  padding-bottom: 5rem;
+}
+
+.UnderLogo li {
+  display: inline-block;
+}
+
+.UnderLogo img {
+  height: 2.5rem;
+  padding: 1.5rem;
+}
+
+.UnderLogo img:hover {
+  opacity: 0.5;
+}
+
+.Undertext {
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+.Undertext-a {
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.copy-a {
+  color: white;
+  margin-top: 3rem;
+  letter-spacing: 0.2rem;
+  font-size: 0.5rem;
+}
